@@ -5,8 +5,10 @@
   "author": "",
   "private": true,
   "license": "UNLICENSED",
+  "main": "dist/main.js",
   "scripts": {
     "build": "nest build",
+    "vercel-build": "nest build && npm run postbuild",
     "postbuild": "copyfiles -u 1 src/email/templates/**/* dist/email/templates",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
     "start": "nest start",
