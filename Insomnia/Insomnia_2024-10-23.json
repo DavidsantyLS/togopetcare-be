@@ -1,0 +1,317 @@
+{
+  "_type": "export",
+  "__export_format": 4,
+  "__export_date": "2024-10-23T12:17:09.245Z",
+  "__export_source": "insomnia.desktop.app:v10.1.0",
+  "resources": [
+    {
+      "_id": "req_9b7a5871150848fa80fac7624d0e5041",
+      "parentId": "fld_c61e9d3ec1ca4d86b7482b9158f3cc22",
+      "modified": 1729685756868,
+      "created": 1729685756868,
+      "url": "http://localhost:3000/auth/register",
+      "name": "Create User",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"email\":\"camolave12@gmail.com\",\n\t\"password\":\"M4gnus$21\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        { "name": "Content-Type", "value": "application/json" },
+        { "name": "User-Agent", "value": "insomnia/10.0.0" }
+      ],
+      "authentication": {},
+      "metaSortKey": -1719061808365,
+      "isPrivate": false,
+      "pathParameters": [],
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "fld_c61e9d3ec1ca4d86b7482b9158f3cc22",
+      "parentId": "wrk_4221ac6d6a6947c889b21ebe56759e27",
+      "modified": 1729685756866,
+      "created": 1729685756866,
+      "name": "User",
+      "description": "",
+      "environment": {},
+      "environmentPropertyOrder": null,
+      "metaSortKey": -1717855287041,
+      "_type": "request_group"
+    },
+    {
+      "_id": "wrk_4221ac6d6a6947c889b21ebe56759e27",
+      "parentId": null,
+      "modified": 1729685756860,
+      "created": 1729685756860,
+      "name": "Togopetcare",
+      "description": "",
+      "scope": "collection",
+      "_type": "workspace"
+    },
+    {
+      "_id": "req_c2489463e877449cbffc8492d7d6c305",
+      "parentId": "fld_c61e9d3ec1ca4d86b7482b9158f3cc22",
+      "modified": 1729685756872,
+      "created": 1729685756872,
+      "url": "http://localhost:3000/auth/login",
+      "name": "Login",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"email\":\"camolave12@gmail.com\",\n\t\"password\":\"M4gnus$21\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        { "name": "Content-Type", "value": "application/json" },
+        { "name": "User-Agent", "value": "insomnia/8.3.0" }
+      ],
+      "authentication": {},
+      "metaSortKey": -1719061808165,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_9fdcf309ca134f3284e47dd7040ce759",
+      "parentId": "fld_c61e9d3ec1ca4d86b7482b9158f3cc22",
+      "modified": 1729685756891,
+      "created": 1729685756891,
+      "url": "http://localhost:3000/auth/check-token",
+      "name": "Check Token",
+      "description": "",
+      "method": "GET",
+      "body": {},
+      "parameters": [],
+      "headers": [
+        {
+          "name": "User-Agent",
+          "value": "insomnia/8.3.0",
+          "id": "pair_5c0c507019ce40b8a1deb28fc7664079"
+        },
+        {
+          "id": "pair_f0f9d064908344f99410a302a896e0ef",
+          "name": "Authorization",
+          "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ZTg5ZDBkYWQ2MDkxYTZhYTI4OTc0MSIsImlhdCI6MTcyNjUyMDcyMiwiZXhwIjoxNzI2NTQyMzIyfQ.9-YAyYQOmn8FsdgKLlWBgUnLmF5DHAA1kbsGTZSzMjE",
+          "description": ""
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1719061808065,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_7f77e2aa31894b379475830b54d86c30",
+      "parentId": "fld_c61e9d3ec1ca4d86b7482b9158f3cc22",
+      "modified": 1729685756941,
+      "created": 1729685756941,
+      "url": "http://localhost:3000/auth/66e89e8461a1b170185184c8",
+      "name": "Delete User",
+      "description": "",
+      "method": "DELETE",
+      "body": {},
+      "parameters": [],
+      "headers": [
+        {
+          "name": "User-Agent",
+          "value": "insomnia/8.3.0",
+          "id": "pair_5c0c507019ce40b8a1deb28fc7664079"
+        },
+        {
+          "id": "pair_f0f9d064908344f99410a302a896e0ef",
+          "name": "Authorization",
+          "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NzU5ZmI1MTQ0ZGQ2ZTY0MTMzMTIyYyIsImlhdCI6MTcxOTA1OTQ5OSwiZXhwIjoxNzE5MDgxMDk5fQ.PIh2T7X_XgsBAnxZJrLkRLMTm-Gr9uRXa0XvxcIx1TI",
+          "description": ""
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1719061807965,
+      "isPrivate": false,
+      "pathParameters": [],
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_fe0dc0d3f62f44d1a72c1cc422b56ea5",
+      "parentId": "fld_c61e9d3ec1ca4d86b7482b9158f3cc22",
+      "modified": 1729685756925,
+      "created": 1729685756925,
+      "url": "http://localhost:3000/auth/66e8a0a17335e7145bea551b",
+      "name": "Update User",
+      "description": "",
+      "method": "PATCH",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"first_name\": \"Camilo Andres\",\n  \"last_name\": \"Moreno Laverde\",\n  \"phone\": \"123-456-7890\",\n\t\"billing_address\":{\n\t\t\"address\": \"Carrera 6B # 2-16\",\n  \t\"city\": \"Subachoque\",\n  \t\"department\": \"Cundinamarca\",\n\t\t\"postal_code\": \"250220\"\n\t},\n  \"avatar\": \"path/to/avatar.jpg\",\n  \"role\": \"admin\",\n  \"verified\": true,\n  \"active\": true\n}\n"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_a40f04fc255a4ea98cb07c3ec3c8f775"
+        },
+        {
+          "name": "User-Agent",
+          "value": "insomnia/8.3.0",
+          "id": "pair_5c0c507019ce40b8a1deb28fc7664079"
+        },
+        {
+          "id": "pair_f0f9d064908344f99410a302a896e0ef",
+          "name": "Authorization",
+          "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ZThhMGExNzMzNWU3MTQ1YmVhNTUxYiIsImlhdCI6MTcyNjUyMTUwNSwiZXhwIjoxNzI2NTQzMTA1fQ.KeSY9ctfokYPszumOKoun-7tP92xfsDiA5MMzB9xR-8",
+          "description": "",
+          "type": "text",
+          "multiline": false
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1719061807865,
+      "isPrivate": false,
+      "pathParameters": [],
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_7e4dcf77519c43bc8a7d32df9178f478",
+      "parentId": "fld_c61e9d3ec1ca4d86b7482b9158f3cc22",
+      "modified": 1729685756924,
+      "created": 1729685756924,
+      "url": "http://localhost:3000/auth/66e89e8461a1b170185184c8",
+      "name": "Find User",
+      "description": "",
+      "method": "GET",
+      "body": {},
+      "parameters": [],
+      "headers": [
+        {
+          "name": "User-Agent",
+          "value": "insomnia/8.3.0",
+          "id": "pair_5c0c507019ce40b8a1deb28fc7664079"
+        },
+        {
+          "id": "pair_f0f9d064908344f99410a302a896e0ef",
+          "name": "Authorization",
+          "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ZTg5ZTg0NjFhMWIxNzAxODUxODRjOCIsImlhdCI6MTcyNjUyMTA0MCwiZXhwIjoxNzI2NTQyNjQwfQ.TcPqgjs8F4N9HjKcy48avPjCLu96Z8i6DOtSMGiXzrI",
+          "description": ""
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1719061807765,
+      "isPrivate": false,
+      "pathParameters": [],
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_20118dd97b0c4138a4e0babe1b0d68ba",
+      "parentId": "fld_c61e9d3ec1ca4d86b7482b9158f3cc22",
+      "modified": 1729685756888,
+      "created": 1729685756888,
+      "url": "http://localhost:3000/auth",
+      "name": "Find All Users",
+      "description": "",
+      "method": "GET",
+      "body": {},
+      "parameters": [],
+      "headers": [
+        {
+          "name": "User-Agent",
+          "value": "insomnia/8.3.0",
+          "id": "pair_5c0c507019ce40b8a1deb28fc7664079"
+        },
+        {
+          "id": "pair_f0f9d064908344f99410a302a896e0ef",
+          "name": "Authorization",
+          "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ZThhMGExNzMzNWU3MTQ1YmVhNTUxYiIsImlhdCI6MTcyNjUyMTU1NSwiZXhwIjoxNzI2NTQzMTU1fQ.Z5OI3ImBaE19KZEQLXN_D0z1nNVNS9mcjpM8Ha4T5Pg",
+          "description": ""
+        },
+        {
+          "id": "pair_d09f9e2ef3a745adbd2f84ab585ee53a",
+          "name": "",
+          "value": "",
+          "description": ""
+        }
+      ],
+      "authentication": {},
+      "preRequestScript": "",
+      "metaSortKey": -1719061807665,
+      "isPrivate": false,
+      "pathParameters": [],
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "env_6926af52d85e4141a13ea25e762a9a15",
+      "parentId": "wrk_4221ac6d6a6947c889b21ebe56759e27",
+      "modified": 1729685756862,
+      "created": 1729685756862,
+      "name": "Base Environment",
+      "data": {},
+      "dataPropertyOrder": null,
+      "color": null,
+      "isPrivate": false,
+      "metaSortKey": 1726520158206,
+      "_type": "environment"
+    },
+    {
+      "_id": "jar_d7f3c74910bf4b079850f8ea1a77a776",
+      "parentId": "wrk_4221ac6d6a6947c889b21ebe56759e27",
+      "modified": 1729685756864,
+      "created": 1729685756864,
+      "name": "Default Jar",
+      "cookies": [],
+      "_type": "cookie_jar"
+    },
+    {
+      "_id": "spc_66cfe753fa3d4f9abdf168352dce1291",
+      "parentId": "wrk_4221ac6d6a6947c889b21ebe56759e27",
+      "modified": 1729685757299,
+      "created": 1729685757296,
+      "fileName": "Togopetcare",
+      "contents": "",
+      "contentType": "yaml",
+      "_type": "api_spec"
+    }
+  ]
+}
